@@ -13,7 +13,7 @@ object ReverseArray {
         }
 
 
-        print(array.joinToString(", "))
+        println(array.joinToString(", "))
 
         return array
 
