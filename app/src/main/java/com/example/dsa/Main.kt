@@ -3,6 +3,7 @@ package com.example.dsa
 import android.util.Log
 import com.example.dsa.arrays.ReverseArray
 import com.example.dsa.arrays.MaxMinArray
+import com.example.dsa.hashmap.TwoSum
 
 fun main() {
     //The intArrayOf function in Kotlin is a standard library function used to
@@ -13,6 +14,7 @@ fun main() {
 
 
     ReverseArray.reverse(array) //O(n/2)
-        MaxMinArray.max(array)
-        MaxMinArray.min(array)
+    MaxMinArray.max(array)
+    MaxMinArray.min(array)
+    TwoSum.twosum(array,16)
 }
