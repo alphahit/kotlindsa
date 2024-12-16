@@ -4,6 +4,7 @@ import com.example.dsa.arrays.ReverseArray
 import com.example.dsa.arrays.MaxMinArray
 import com.example.dsa.hashmap.TwoSum
 import com.example.dsa.sort.Quicksort
+import com.example.dsa.sort.MergeSort
 import java.util.Scanner
 
 fun main() {
@@ -22,7 +23,7 @@ fun main() {
     val numbers = input.trim().split("\\s+".toRegex()).mapNotNull {
         it.toIntOrNull()
     }.toIntArray()
-
+    val numberList = input.split(" ").map { it.toInt() }
     //Display the numbers entered
     println("Numbers entered:")
     numbers.forEach { println(it) }
@@ -31,7 +32,9 @@ fun main() {
     //MaxMinArray.max(array)
     //MaxMinArray.min(array)
     //TwoSum.twosum(array,16)
-    println(Quicksort.sort(numbers).joinToString(", "))
+    //println(Quicksort.sort(numbers).joinToString(", "))
+    println(MergeSort.sort(numberList).joinToString(", "))
+
 
 
 }
