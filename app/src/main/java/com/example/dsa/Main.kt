@@ -6,6 +6,7 @@ import com.example.dsa.hashmap.TwoSum
 import com.example.dsa.sort.Quicksort
 import com.example.dsa.sort.MergeSort
 import com.example.dsa.arrays.Sort012
+import com.example.dsa.arrays.NegativeOneSide
 import java.util.Scanner
 
 fun main() {
@@ -16,7 +17,8 @@ fun main() {
 
 
     //val array = intArrayOf(11, 4, 3, 5, 67, 44)
-    var number012 = listOf<Int>(1,2,0,2,1,0,2,1,1,0,0,0,2)
+//    var number012 = listOf<Int>(1,2,0,2,1,0,2,1,1,0,0,0,2)
+    var numberPlusMinus = listOf<Int>(-1,22,10,-2,121,100,-23,121,-13,0,-28)
 
 //    val scanner = Scanner(System.`in`)
 //    // Read input numbers from the user
@@ -40,6 +42,7 @@ fun main() {
     //println(Quicksort.sort(numbers).joinToString(", "))
     //println(MergeSort.sort(numberList).joinToString(", "))
 
-    println(Sort012.sort(number012).joinToString(", "))
-
+//    println(Sort012.sort(number012).joinToString(", "))
+   // println(Sort012.sort(number012).joinToString(", "))
+  println(NegativeOneSide.negativeOneSide(numberPlusMinus).joinToString(", "))
 }
