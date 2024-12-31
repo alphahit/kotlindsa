@@ -5,6 +5,7 @@ import com.example.dsa.arrays.MaxMinArray
 import com.example.dsa.hashmap.TwoSum
 import com.example.dsa.sort.Quicksort
 import com.example.dsa.sort.MergeSort
+import com.example.dsa.sort.InsertionSort
 import com.example.dsa.arrays.Sort012
 import com.example.dsa.arrays.NegativeOneSide
 import java.util.Scanner
@@ -44,5 +45,6 @@ fun main() {
 
 //    println(Sort012.sort(number012).joinToString(", "))
    // println(Sort012.sort(number012).joinToString(", "))
-  println(NegativeOneSide.negativeOneSide(numberPlusMinus).joinToString(", "))
+//  println(NegativeOneSide.negativeOneSide(numberPlusMinus).joinToString(", "))
+    println(InsertionSort.sort(numberPlusMinus).joinToString(", "))
 }
