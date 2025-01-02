@@ -8,6 +8,7 @@ import com.example.dsa.sort.MergeSort
 import com.example.dsa.sort.InsertionSort
 import com.example.dsa.arrays.Sort012
 import com.example.dsa.arrays.NegativeOneSide
+import com.example.dsa.arrays.MaximumSubarray
 import java.util.Scanner
 
 fun main() {
@@ -20,7 +21,7 @@ fun main() {
     //val array = intArrayOf(11, 4, 3, 5, 67, 44)
 //    var number012 = listOf<Int>(1,2,0,2,1,0,2,1,1,0,0,0,2)
     var numberPlusMinus = listOf<Int>(-1,22,10,-2,121,100,-23,121,-13,0,-28)
-
+    var smallList = listOf(2, 3, -8, 7, -1, 2, 3)
 //    val scanner = Scanner(System.`in`)
 //    // Read input numbers from the user
 //    println("Enter required number of integers separated by spaces and then press enter: ")
@@ -43,8 +44,10 @@ fun main() {
     //println(Quicksort.sort(numbers).joinToString(", "))
     //println(MergeSort.sort(numberList).joinToString(", "))
 
-//    println(Sort012.sort(number012).joinToString(", "))
-   // println(Sort012.sort(number012).joinToString(", "))
-//  println(NegativeOneSide.negativeOneSide(numberPlusMinus).joinToString(", "))
-    println(InsertionSort.sort(numberPlusMinus).joinToString(", "))
+    //println(Sort012.sort(number012).joinToString(", "))
+    //println(Sort012.sort(number012).joinToString(", "))
+    //println(NegativeOneSide.negativeOneSide(numberPlusMinus).joinToString(", "))
+    //println(InsertionSort.sort(numberPlusMinus).joinToString(", "))
+    MaximumSubarray.maximumsubarrayBrute(smallList)
+    MaximumSubarray.maximumsubarrayKadane(smallList)
 }
