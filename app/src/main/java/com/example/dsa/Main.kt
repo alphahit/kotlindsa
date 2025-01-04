@@ -8,7 +8,8 @@ import com.example.dsa.sort.MergeSort
 import com.example.dsa.sort.InsertionSort
 import com.example.dsa.arrays.Sort012
 import com.example.dsa.arrays.NegativeOneSide
-import com.example.dsa.arrays.MaximumSubarray
+//import com.example.dsa.arrays.MaximumSubarray
+import com.example.dsa.arrays.FindDuplicate
 import java.util.Scanner
 
 fun main() {
@@ -22,6 +23,7 @@ fun main() {
 //    var number012 = listOf<Int>(1,2,0,2,1,0,2,1,1,0,0,0,2)
     var numberPlusMinus = listOf<Int>(-1,22,10,-2,121,100,-23,121,-13,0,-28)
     var smallList = listOf(2, 3, -8, 7, -1, 2, 3)
+    var duplicateList = listOf(1,3,4,2,2)
 //    val scanner = Scanner(System.`in`)
 //    // Read input numbers from the user
 //    println("Enter required number of integers separated by spaces and then press enter: ")
@@ -48,6 +50,8 @@ fun main() {
     //println(Sort012.sort(number012).joinToString(", "))
     //println(NegativeOneSide.negativeOneSide(numberPlusMinus).joinToString(", "))
     //println(InsertionSort.sort(numberPlusMinus).joinToString(", "))
-    MaximumSubarray.maximumsubarrayBrute(smallList)
-    MaximumSubarray.maximumsubarrayKadane(smallList)
+//    MaximumSubarray.maximumsubarrayBrute(smallList)
+//    MaximumSubarray.maximumsubarrayKadane(smallList)
+
+    println(FindDuplicate.findduplicate(duplicateList))
 }
