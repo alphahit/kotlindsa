@@ -11,6 +11,7 @@ import com.example.dsa.arrays.NegativeOneSide
 import com.example.dsa.arrays.MaximumSubarray
 import com.example.dsa.arrays.MaximumProductSubarray
 import com.example.dsa.arrays.FindDuplicate
+import com.example.dsa.arrays.MergeSorted
 import java.util.Scanner
 
 fun main() {
@@ -26,6 +27,8 @@ fun main() {
     var smallList = listOf(2, 3, -8, 7, -1, 2, 3)
     var duplicateList = listOf(1,3,4,2,2)
     val arrayProduct = intArrayOf(4, 3, 5, 6, 0, -2,100, 361)
+    var leftList = listOf(1,2,2,3,4,9)
+    var rightList = listOf(6,7,8)
 //    val scanner = Scanner(System.`in`)
 //    // Read input numbers from the user
 //    println("Enter required number of integers separated by spaces and then press enter: ")
@@ -44,7 +47,7 @@ fun main() {
     //ReverseArray.reverse(array) //O(n/2)
     //MaxMinArray.max(array)
     //MaxMinArray.min(array)
-    //TwoSum.twosum(array,16)
+    //TwoSum.twwosum(array,16)
     //println(Quicksort.sort(numbers).joinToString(", "))
     //println(MergeSort.sort(numberList).joinToString(", "))
 
@@ -56,5 +59,9 @@ fun main() {
 //    MaximumSubarray.maximumsubarrayKadane(smallList)
 
 //    println(FindDuplicate.findduplicate(duplicateList))
-    println(MaximumProductSubarray.maximumproduct(arrayProduct))
+//    println(MaximumProductSubarray.maximumproduct(arrayProduct))
+
+    println(MergeSorted.mergesortednormal(leftList,rightList).joinToString(", "))
+
+
 }
