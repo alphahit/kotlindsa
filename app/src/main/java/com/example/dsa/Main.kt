@@ -12,6 +12,7 @@ import com.example.dsa.arrays.MaximumSubarray
 import com.example.dsa.arrays.MaximumProductSubarray
 import com.example.dsa.arrays.FindDuplicate
 import com.example.dsa.arrays.MergeSorted
+import com.example.dsa.arrays.SubarraySumK
 import java.util.Scanner
 
 fun main() {
@@ -62,7 +63,8 @@ fun main() {
 //    println(MaximumProductSubarray.maximumproduct(arrayProduct))
 
 //    println(MergeSorted.mergesortednormal(leftList,rightList).joinToString(", "))
-    println(MergeSorted.mergesortinplace(leftList,rightList).joinToString(", "))
-
+//    println(MergeSorted.mergesortinplace(leftList,rightList).joinToString(", "))
+    println(SubarraySumK.subarraysumBrute(duplicateList,4 ))
+    println(SubarraySumK.subarraysumBrute(duplicateList,5 ))
 
 }
