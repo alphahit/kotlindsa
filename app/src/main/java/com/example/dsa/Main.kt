@@ -12,6 +12,7 @@ import com.example.dsa.arrays.MaximumSubarray
 import com.example.dsa.arrays.MaximumProductSubarray
 import com.example.dsa.arrays.FindDuplicate
 import com.example.dsa.arrays.MergeSorted
+import com.example.dsa.arrays.PrefixSum
 import com.example.dsa.arrays.SubarraySumK
 import java.util.Scanner
 
@@ -22,7 +23,7 @@ fun main() {
     //types as well, such as doubleArrayOf, floatArrayOf, and charArrayOf.
 
 
-    //val array = intArrayOf(11, 4, 3, 5, 67, 44)
+    val array = intArrayOf(11, 4, 3, 5, 67, 44)
 //    var number012 = listOf<Int>(1,2,0,2,1,0,2,1,1,0,0,0,2)
     var numberPlusMinus = listOf<Int>(-1,22,10,-2,121,100,-23,121,-13,0,-28)
     var smallList = listOf(2, 3, -8, 7, -1, 2, 3)
@@ -64,7 +65,8 @@ fun main() {
 
 //    println(MergeSorted.mergesortednormal(leftList,rightList).joinToString(", "))
 //    println(MergeSorted.mergesortinplace(leftList,rightList).joinToString(", "))
-    println(SubarraySumK.subarraysumBrute(duplicateList,4 ))
-    println(SubarraySumK.subarraysumBrute(duplicateList,5 ))
+//    println(SubarraySumK.subarraysumBrute(duplicateList,4 ))
+//    println(SubarraySumK.subarraysumBrute(duplicateList,5 ))
+    println(PrefixSum.prefixsum(array).joinToString(", "))
 
 }
