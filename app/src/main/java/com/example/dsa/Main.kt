@@ -28,6 +28,7 @@ fun main() {
     var numberPlusMinus = listOf<Int>(-1,22,10,-2,121,100,-23,121,-13,0,-28)
     var smallList = listOf(2, 3, -8, 7, -1, 2, 3)
     var duplicateList = listOf(1,3,4,2,2)
+    var duplicateArray= intArrayOf(1,3,4,2,2)
     val arrayProduct = intArrayOf(4, 3, 5, 6, 0, -2,100, 361)
     val leftList = listOf(1,2,2,3,4,9)
     val rightList = listOf(6,7,8)
@@ -67,6 +68,7 @@ fun main() {
 //    println(MergeSorted.mergesortinplace(leftList,rightList).joinToString(", "))
 //    println(SubarraySumK.subarraysumBrute(duplicateList,4 ))
 //    println(SubarraySumK.subarraysumBrute(duplicateList,5 ))
-    println(PrefixSum.prefixsum(array).joinToString(", "))
+//    println(PrefixSum.prefixsum(array).joinToString(", "))
+    println(SubarraySumK.subarraysumOptimal(duplicateArray,4))
 
 }
